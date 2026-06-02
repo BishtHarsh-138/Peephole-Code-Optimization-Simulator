@@ -1,0 +1,181 @@
+/* General Page */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Main Container */
+
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+/* Top Panels */
+
+.panels {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Reusable Panel Style */
+
+.panel {
+    flex: 1;
+    background: #303b1e;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+.panel h2 {
+    text-align: center;
+    color: #38f868;
+    margin-top: 0;
+}
+
+/* Text Areas */
+
+textarea {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #111827;
+    color: #b33333;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Rules Panel */
+
+#rulesBox {
+    height: 300px;
+    overflow-y: auto;
+    background: #111827;
+    padding: 10px;
+    border-radius: 8px;
+    color: #facc15;
+    font-family: Consolas, monospace;
+}
+
+/* Buttons */
+
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Optimize Button */
+
+#optimizeBtn {
+    background: #22c55e;
+    color: white;
+}
+
+/* Clear Button */
+
+#clearBtn {
+    background: #ef4444;
+    color: white;
+}
+
+/* Optimization Counter */
+
+.stats {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+.stats h2 {
+    color: #38bdf8;
+    margin-top: 0;
+}
+
+#count {
+    color: #22c55e;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Symbol Table */
+
+.symbol-panel {
+    margin-top: 20px;
+}
+
+#symbolTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111827;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#symbolTable th {
+    background: #334155;
+    color: #38bdf8;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#symbolTable td {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #374151;
+}
+
+#symbolTable tr:hover {
+    background: #1f2937;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 1000px) {
+
+    .panels {
+        flex-direction: column;
+    }
+
+    textarea {
+        height: 250px;
+    }
+}
